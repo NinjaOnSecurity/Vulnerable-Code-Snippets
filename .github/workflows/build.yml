@@ -5,7 +5,7 @@ on:
     branches:
       - master # main branch name
     paths:
-      - 'NinjaOnSecurity/Vulnerable-Code-Snippets/blob/master/XSS/dom.php**' # monorepo projects paths from the monorepo root directory
+      - 'NinjaOnSecurity/Vulnerable-Code-Snippets/blob/master/XSS/dom.php' # monorepo projects paths from the monorepo root directory
   pull_request:
     types: [opened, synchronize, reopened]
 
@@ -47,7 +47,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_2 }}  # analysis token associated to your project
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         with:
-          projectBaseDir: PROJECT2_PATH/ # project path from the monorepo root directory
+          projectBaseDir: NinjaOnSecurity/Vulnerable-Code-Snippets/blob/master/XSS/ # project path from the monorepo root directory
       # If you wish to fail your job when the Quality Gate is red, uncomment the
       # following lines. This would typically be used to fail a deployment.
       # We do not recommend to use this in a pull request. Prefer using pull request
