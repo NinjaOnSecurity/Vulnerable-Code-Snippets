@@ -5,8 +5,7 @@ on:
     branches:
       - master # main branch name
     paths:
-      - 'PROJECT1_PATH/**' # monorepo projects paths from the monorepo root directory
-      - 'PROJECT2_PATH/**'
+      - '/NinjaOnSecurity/Vulnerable-Code-Snippets/blob/master/XSS/dom.php**' # monorepo projects paths from the monorepo root directory
   pull_request:
     types: [opened, synchronize, reopened]
 
